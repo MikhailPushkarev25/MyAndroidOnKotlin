@@ -20,32 +20,43 @@ class MainActivity2 : AppCompatActivity() {
             if(viewBiding.edText.text.toString() != "") {
 
                 name = viewBiding.edText.text.toString()
-
                 viewBiding.tvName.visibility = View.VISIBLE
+                viewBiding.imgFoto.visibility = View.VISIBLE
 
                 when (name) {
-
 
                         Constance.DIRECTOR -> {
                             viewBiding.tvName.visibility = View.VISIBLE
                             val temp = "Ваша зарплата -> ${Constance.DIRECTOR_PRICE}"
-                            if(viewBiding.edCode.text.toString().toInt() == Constance.DIRECTOR_PASSWORD)
-                            viewBiding.tvName.text = temp
+                            if(viewBiding.edCode.text.toString().toInt() == Constance.DIRECTOR_PASSWORD) {
+                                viewBiding.imgFoto.setImageResource(R.drawable.director)
+                                viewBiding.tvName.text = temp
+                            } else {
+                                viewBiding.imgFoto.setImageResource(R.drawable.fig)
+                            }
                         }
 
 
                     Constance.DVORNIK -> {
                         viewBiding.tvName.visibility = View.VISIBLE
                         val temp = "Ваша зарплата -> ${Constance.DVORNIK_PRICE}"
-                        if(viewBiding.edCode.text.toString().toInt() == Constance.DVORNIK_PASSWORD)
-                        viewBiding.tvName.text = temp
+                        if(viewBiding.edCode.text.toString().toInt() == Constance.DVORNIK_PASSWORD) {
+                            viewBiding.imgFoto.setImageResource(R.drawable.dvornik)
+                            viewBiding.tvName.text = temp
+                        } else {
+                            viewBiding.imgFoto.setImageResource(R.drawable.fig)
+                        }
                     }
 
                     Constance.INGENER -> {
                         viewBiding.tvName.visibility = View.VISIBLE
                         val temp = "Ваша зарплата -> ${Constance.INGENER_PRICE}"
-                        if(viewBiding.edCode.text.toString().toInt() == Constance.INGENER_PASSWORD)
-                        viewBiding.tvName.text = temp
+                        if(viewBiding.edCode.text.toString().toInt() == Constance.INGENER_PASSWORD) {
+                            viewBiding.imgFoto.setImageResource(R.drawable.ingener)
+                            viewBiding.tvName.text = temp
+                        } else {
+                            viewBiding.imgFoto.setImageResource(R.drawable.fig)
+                        }
                     }
                 }
             } else {

@@ -10,7 +10,7 @@
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="216dp"
         android:text="Приложение выдачи зарплаты"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,10 +45,10 @@
         android:id="@+id/btnRes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:text="Button"
+        android:layout_marginTop="56dp"
+        android:text="Выдать"
         app:layout_constraintEnd_toEndOf="@+id/edText"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/edText"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
@@ -65,5 +65,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edText"
         app:layout_constraintTop_toBottomOf="@+id/edText" />
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
+        app:layout_constraintStart_toStartOf="@+id/tvInfo"
+        app:srcCompat="@drawable/fig" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
