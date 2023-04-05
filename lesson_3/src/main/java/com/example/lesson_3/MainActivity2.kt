@@ -26,19 +26,26 @@ class MainActivity2 : AppCompatActivity() {
                 when (name) {
 
 
-                    "Mike" -> {
+                        Constance.DIRECTOR -> {
+                            viewBiding.tvName.visibility = View.VISIBLE
+                            val temp = "Ваша зарплата -> ${Constance.DIRECTOR_PRICE}"
+                            if(viewBiding.edCode.text.toString().toInt() == Constance.DIRECTOR_PASSWORD)
+                            viewBiding.tvName.text = temp
+                        }
+
+
+                    Constance.DVORNIK -> {
                         viewBiding.tvName.visibility = View.VISIBLE
-                        viewBiding.tvName.text = "Ваша зарплата -> 30.000 рублей"
+                        val temp = "Ваша зарплата -> ${Constance.DVORNIK_PRICE}"
+                        if(viewBiding.edCode.text.toString().toInt() == Constance.DVORNIK_PASSWORD)
+                        viewBiding.tvName.text = temp
                     }
 
-                    "Roma" -> {
+                    Constance.INGENER -> {
                         viewBiding.tvName.visibility = View.VISIBLE
-                        viewBiding.tvName.text = "Ваша зарплата -> 50.000 рублей"
-                    }
-
-                    "Alex" -> {
-                        viewBiding.tvName.visibility = View.VISIBLE
-                        viewBiding.tvName.text = "Ваша зарплата -> 100.000 рублей"
+                        val temp = "Ваша зарплата -> ${Constance.INGENER_PRICE}"
+                        if(viewBiding.edCode.text.toString().toInt() == Constance.INGENER_PASSWORD)
+                        viewBiding.tvName.text = temp
                     }
                 }
             } else {

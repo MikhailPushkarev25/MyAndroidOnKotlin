@@ -34,13 +34,12 @@
     <TextView
         android:id="@+id/tvName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/edText"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/edText"
-        app:layout_constraintTop_toBottomOf="@+id/edText" />
+        app:layout_constraintEnd_toEndOf="@+id/edCode"
+        app:layout_constraintStart_toStartOf="@+id/edCode"
+        app:layout_constraintTop_toBottomOf="@+id/edCode" />
 
     <Button
         android:id="@+id/btnRes"
@@ -52,4 +51,19 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/edText"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <EditText
+        android:id="@+id/edCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Введите код"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edText"
+        app:layout_constraintTop_toBottomOf="@+id/edText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
