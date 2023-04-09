@@ -16,3 +16,4 @@ rootProject.name = "MyFirstApp"
 include ':app'
 include ':myviewbinding'
 include ':lesson_3'
+include ':myaccound'

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyAccound</string>
+    <string name="enter_in">Enter</string>
+    <string name="enter_reg">Registration</string>
+    <string name="avatar_view">Avatar</string>
+    <string name="first_name">Name</string>
+    <string name="last_name">LastName</string>
+    <string name="middle_name">MiddleName</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="button_ok">OK</string>
+</resources>

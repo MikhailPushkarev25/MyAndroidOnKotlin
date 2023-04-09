@@ -7,74 +7,25 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/tvInfo"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:text="Приложение выдачи зарплаты"
-        android:textColor="@color/black"
+        android:text="MainActivity2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Имя"
-        android:inputType="textAutoCorrect"
-        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="@+id/tvInfo"
-        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
-
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="40dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/edCode"
-        app:layout_constraintStart_toStartOf="@+id/edCode"
-        app:layout_constraintTop_toBottomOf="@+id/edCode" />
-
     <Button
-        android:id="@+id/btnRes"
-        android:layout_width="0dp"
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Выдать"
-        app:layout_constraintEnd_toEndOf="@+id/edText"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/edText"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
-
-    <EditText
-        android:id="@+id/edCode"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="Введите код"
-        android:inputType="numberPassword"
-        app:layout_constraintEnd_toEndOf="@+id/edText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edText"
-        app:layout_constraintTop_toBottomOf="@+id/edText" />
-
-    <ImageView
-        android:id="@+id/imgFoto"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="32dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
-        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
-        app:layout_constraintStart_toStartOf="@+id/tvInfo"
-        app:srcCompat="@drawable/fig" />
+        android:layout_marginTop="84dp"
+        android:onClick="onClickSend"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
